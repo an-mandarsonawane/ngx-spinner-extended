@@ -123,11 +123,11 @@ class NgxSpinnerService {
                     this.spinnerObservable
                         .subscribe((spinnerState) => {
                         if (spinnerState && spinnerState.show) {
-                            console.log("Spinner is active, hiding now");
+                            // console.log("Spinner is active, hiding now");
                             this.hide(name);
                         }
                         else {
-                            console.log("Spinner already hidden, skipping hide");
+                            // console.log("Spinner already hidden, skipping hide");
                         }
                     })
                         .unsubscribe();
