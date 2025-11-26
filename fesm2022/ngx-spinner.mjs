@@ -117,7 +117,7 @@ class NgxSpinnerService {
                     this.spinnerObservable.next(new NgxSpinner({ name, show: true }));
                 }
                 resolve(true);
-                // Hide spinner after 10 seconds
+                // Hide spinner after 20 seconds
                 setTimeout(() => {
                     // Check if spinner is still active
                     this.spinnerObservable
@@ -131,7 +131,7 @@ class NgxSpinnerService {
                         }
                     })
                         .unsubscribe();
-                }, 10000);
+                }, 20000);
             }, 10);
         });
     }
